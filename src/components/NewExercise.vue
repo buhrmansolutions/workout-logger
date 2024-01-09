@@ -73,7 +73,7 @@ const onChange = (e) => {
                 <h5>Category</h5>
                 <input v-model="category" />
             </div>
-            <div class="horizontal">
+            <div class="horizontal marginBottom">
                 <button class="secondary-button" @click="hideNewExerciseDialog">Close</button>
                 <button @click="onSave" :disabled="isDisabled">Save</button>
             </div>
@@ -82,6 +82,9 @@ const onChange = (e) => {
 </template>
 
 <style scoped>
+.marginBottom{
+    margin-bottom: 50px;
+}
 .exercise {
     color: #000;
     border: 1px solid black;
@@ -131,6 +134,7 @@ h3 {
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+    overflow: scroll;
 }
 
 .dialog>.horizontal {
